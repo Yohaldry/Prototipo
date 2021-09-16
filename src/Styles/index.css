@@ -1,0 +1,697 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+
+    display: flex;
+    padding-left: 60px;
+    font-size: 30px;
+    background-color: #14a597;
+    width: 100%;
+    height: 110px;
+    position: fixed;
+    z-index: 1;
+}
+
+.logo{
+
+    margin-top: 2px;
+    
+}
+
+.almagecort{
+
+    font-family: natalia script;
+    font-size: 83px;
+    color: black;
+}
+
+.Opciones{
+
+    display: flex;
+    padding-left: 500px;
+    font-size: 30px;
+    margin-top: 25px;
+    
+}
+
+.Entradas{
+
+    margin-left: 20px;
+    font-family: 'Patrick Hand', cursive;
+    transition: 1s;
+    text-align: center;
+    width: 160px;
+    height: 50px;
+}
+
+.Entradas:hover{
+
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255);
+    font-size: 32px;
+    height: 50px;
+    color: #0e6b62;
+    
+}
+
+.Imagen{
+
+    width: 2100px;
+    background-color: black;
+    opacity: 0.1;
+    margin-top: 110px;
+}
+
+.Cuadrado_Oscuro{
+
+    width: 2100px;
+    height: 588px;
+    background-color: black;
+    margin-top: -580px;
+    padding-top: 200px;
+
+}
+
+.titulo_Bienvenida{
+
+    margin-left: 140px;
+    margin-top: -80px;
+    font-size: 80px;
+    color: white;
+    top: 450px;
+    font-family: 'Patrick Hand', cursive;
+}
+
+.P_Bienvenida{
+
+    color: white;
+    margin: 50px;
+    font-size: 40px;
+    font-family: 'Calligraffitti', cursive;
+    margin-top: 20px;
+    margin-left: 140px;
+}
+
+.boton_cotizar{
+
+    color: white;
+    width: 300px;
+    height: 80px;
+    margin: 50px;
+    margin-top: -5px;
+    font-size: 50px;
+    padding: -10px;
+    background-color: #168b80;
+    border-radius: 30px;
+    font-family: 'Patrick Hand', cursive;
+    border: 8px solid #ffffff;
+    position: relative;
+    transition: 0.5s;
+    margin-left: 140px;
+    
+}
+
+.boton_cotizar:hover{
+
+    background-color: rgb(255, 255, 255);
+    color: #168b80;
+    border: 8px solid #168b80;
+}
+
+.circulo_Bienvenida{
+
+    width: 500px;
+    height: 500px;
+    background-color: #168b80;
+    margin-top: -530px;
+    margin-left: 1500px;
+    border-radius: 100%;
+}
+
+.circulo_Borde{
+
+    width: 500px;
+    height: 500px;
+    border: 9px solid #353535;
+    margin-top: -490px;
+    margin-left: 1480px;
+    border-radius: 100%;
+}
+
+.Titulo_Circulo{
+
+    color: white;
+    margin-top: -440px;
+    margin-left: 1540px;
+    font-family: natalia script;
+    font-size: 120px;
+}
+
+.P_Circulo{
+
+    color: white;
+    margin-top: 40px;
+    margin-left: 1530px;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 60px;
+    font-family: 'Staatliches', cursive;
+} 
+
+
+/* ------------------------Carrusel------------------------------------ */
+
+
+h2{
+    text-align: center;
+    font-size: 70px;
+    font-family: arial;
+    margin-top: 80px;
+    color: rgb(0, 0, 0);
+    text-shadow: 0px 0px 6px black;
+    
+}
+
+.content-all{
+    width: 310px;
+    margin: auto;
+    perspective: 800px;
+    position: relative;
+    
+}
+
+.content-carrousel{
+    width: 100%;
+    position: relative;
+    animation: rotar 15s infinite linear;
+    transform-style: preserve-3d;
+}
+
+.content-carrousel:hover{
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+
+.content-carrousel figure{
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    position: absolute;
+    box-shadow: 0px 0px 20px 0px black;
+    transition: all 300ms;
+    
+}
+
+.content-carrousel figure:hover{
+    box-shadow: 0px 0px 0px 0px black;
+    transition: all 300ms;
+}
+
+.content-carrousel figure:nth-child(1){transform: rotateY(0deg) translateZ(500px);}
+.content-carrousel figure:nth-child(2){transform: rotateY(40deg) translateZ(500px);}
+.content-carrousel figure:nth-child(3){transform: rotateY(80deg) translateZ(500px);}
+.content-carrousel figure:nth-child(4){transform: rotateY(120deg) translateZ(500px);}
+.content-carrousel figure:nth-child(5){transform: rotateY(160deg) translateZ(500px);}
+.content-carrousel figure:nth-child(6){transform: rotateY(200deg) translateZ(500px);}
+.content-carrousel figure:nth-child(7){transform: rotateY(240deg) translateZ(500px);}
+.content-carrousel figure:nth-child(8){transform: rotateY(280deg) translateZ(500px);}
+.content-carrousel figure:nth-child(9){transform: rotateY(320deg) translateZ(500px);}
+.content-carrousel figure:nth-child(10){transform: rotateY(360deg) translateZ(500px);}
+
+.content-carrousel img{
+    width: 100%;
+    transition: all 300ms;
+}
+
+.content-carrousel img:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+}
+
+
+@keyframes rotar{
+    from{
+        transform: rotateY(0deg);
+    }to{
+        transform: rotateY(360deg);
+    }
+}
+
+
+/* ------------------------Carrusel------------------------------------ */
+
+
+.seccion_3{
+
+    margin-top: 400px;
+    padding-top: 200px;
+    background-color: #1d1d1d;
+    color: blanchedalmond;
+    
+}
+
+.title_Renueva{
+
+    font-family: 'Patrick Hand', cursive;
+    font-size: 70px;
+    margin: 50px;
+    margin-top: 50px;
+    margin-left: 140px;
+    
+}
+
+.Almagecort{
+
+    font-family: natalia script;
+    font-size: 90px;
+}
+
+.Sheer_Elegance{
+
+    width: 300px;
+    height: 300px;
+    border-radius: 30%;
+    margin: 90px;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+
+.sheer_title{
+
+   font-size: 30px;
+   width: 400px;
+   margin-left: 60px;
+   color: white;
+  
+   
+}
+
+.product_Total{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-left: 170px;
+
+}
+
+.Products{
+
+    width: 500px;
+    margin-left: -130px;
+}
+
+.Sheer_Elegance:hover{
+
+    width: 400px;
+    height:400px;
+    margin-top: 60px;
+    margin-left: 5px;
+    position: relative;
+}  
+
+/* --------------------boton whatsApp--------------------- */
+
+.btn-wsp{
+
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    line-height: 95px;
+    bottom: 30px;
+    right: 30px;
+    background: #0df053;
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 70px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3) ;
+    z-index: 100;
+    transition: 0.5s;
+}
+
+.btn-wsp:hover{
+
+    text-decoration: none;
+    color: #0df053;
+    background-color: white;
+
+}
+
+/* --------------------boton whatsApp--------------------- */
+
+
+
+.Seccion_4{
+
+   background-image: url('https://res.cloudinary.com/dtkirmtfq/image/upload/v1631758768/Almagecort/Imagen15_motjvk.png');
+    background-size: 100%;
+}
+
+.Title_Seccion4{
+
+    
+    background-color: black;
+    opacity: 0.7;
+}
+
+.Title_Recuerda{
+
+    padding-top: 100px;
+    padding-left: 90px;
+    font-size: 50px;
+    font-family: 'Patrick Hand', cursive;
+    color: rgb(255, 255, 255);
+    opacity: none;
+}
+
+.Conoce{
+
+    color: white;
+    padding-top: 150px;
+    padding-left: 100px;
+    font-size: 90px;
+    font-family: 'Calligraffitti', cursive;
+}
+
+
+
+
+
+
+/* ------------------------------------burbujas fondo-------------------------------- */
+
+
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.DescripcionBurbujas{
+
+    color: white;
+    font-size: 30px;
+    font-family: 'Patrick Hand', cursive;
+    text-align: right;
+    padding-left: 400px;
+}
+
+#Dedicamos{
+
+    font-size: 80px;
+    font-family: 'Calligraffitti', cursive;
+    position: relative;
+    margin-top: 100px;
+    margin-left: 100px;
+    color: #13b1a1;
+}
+
+.bg_animate{
+    width: 100%;
+    height: 100vh;
+    background: black;
+    position: relative;
+    overflow: hidden;
+}
+
+.header_nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.header_nav .contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    
+
+}
+
+.header_nav h1{
+    color: #fff;
+    font-family: 'Gagalin';
+}
+
+.header_nav nav a{
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.banner_title h2{
+    color: #fff;
+    font-size: 60px;
+    font-weight: 700;
+    margin-top: 420px;
+    
+}
+
+.banner_title .llamanos{
+    color: #fff;
+    font-size: 40px;
+    text-decoration: none;
+    display: inline-block;
+    background: #1A2849;
+    padding: 20px;
+    margin-left: 15px;
+    border-radius: 10px;
+}
+
+.llamanos:hover{
+
+    background-color: rgb(255, 255, 255);
+    color: black;
+    transition: 0.5s;
+    border-radius: 20px;
+}
+
+.banner_img{
+    animation: movimiento 2.5s linear infinite;
+}
+
+.banner_img img{
+    width: 600px;
+    display: block;
+}
+
+/* burbujas */
+
+.burbuja{
+    border-radius: 50%;
+    background: #14a597;
+    opacity: .3;
+
+    position: absolute;
+    bottom: -150;
+    
+    animation: burbujas 3s linear infinite ;
+}
+
+.burbuja:nth-child(1){
+    width: 80px;
+    height: 80px;
+    left: 5%;
+    animation-duration: 3s;
+    animation-delay: 3s;
+}
+
+.burbuja:nth-child(2){
+    width: 100px;
+    height: 100px;
+    left: 35%;
+    animation-duration: 3s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(3){
+    width: 20px;
+    height: 20px;
+    left: 15%;
+    animation-duration: 1.5s;
+    animation-delay: 7s;
+}
+
+.burbuja:nth-child(4){
+    width: 50px;
+    height: 50px;
+    left: 90%;
+    animation-duration: 6s;
+    animation-delay: 3s;
+}
+
+.burbuja:nth-child(5){
+    width: 70px;
+    height: 70px;
+    left: 65%;
+    animation-duration: 3s;
+    animation-delay: 1s;
+}
+
+.burbuja:nth-child(6){
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    animation-duration: 4s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(7){
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    animation-duration: 4s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(8){
+    width: 100;
+    height: 100px;
+    left: 52%;
+    animation-duration: 5s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(9){
+    width: 65px;
+    height: 65px;
+    left: 51%;
+    animation-duration: 3s;
+    animation-delay: 2s;
+}
+
+.burbuja:nth-child(10){
+    width: 40px;
+    height: 40px;
+    left: 35%;
+    animation-duration: 3s;
+    animation-delay: 4s;
+}
+
+
+@keyframes burbujas{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    30%{
+        transform: translateX(30px);
+    }
+    50%{
+        opacity: .4;
+    }
+    100%{
+        bottom: 100vh;
+        opacity: 0;
+    }
+}
+
+@keyframes movimiento{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+
+
+
+
+section {
+    position: relative;
+    width: 100%;
+    height: 10vh;
+    padding-top: 200px;
+    background: rgb(255, 255, 255),
+  }
+  
+  section .wave {
+    position: absolute;
+    width: 100%;
+    height: 227px;
+    bottom: 0;
+    left: 0;
+    background: black;
+    animation: move 10s linear infinite;
+  }
+  
+  section .wave::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 227px;
+    top: 0;
+    left: 0;
+    background: url('https://github.com/JoshFransix/CSS-WATER-WAVE-FOOTER/blob/main/wave-large.png?raw=true');
+    opacity: 0.4;
+    animation: move-reversed 10s linear infinite;
+  }
+  section .wave::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 227px;
+    top: 0;
+    left: 0;
+    background: url('https://github.com/JoshFransix/CSS-WATER-WAVE-FOOTER/blob/main/wave-large.png?raw=true');
+    opacity: 0.5;
+    animation-delay: -4s;
+    animation: move 10s linear infinite;
+  }
+  
+  @keyframes move {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 1920px;
+    }
+  }
+  @keyframes move-reversed {
+    0% {
+      background-position: 1920px;
+    }
+    100% {
+      background-position: 0%;
+    }
+  }
+
+  .Text_Creditos{
+
+    color: rgb(0, 0, 0);
+    margin-top: 130px;
+    margin-left: 750px;
+    position: relative;
+    z-index: 1;
+    font-size:25px;
+  }
+
+.footerNombre{
+
+    font-family: natalia script;
+   font-size: 40px;
+    color: black;
+}

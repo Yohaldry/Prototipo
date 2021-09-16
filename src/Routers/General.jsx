@@ -1,0 +1,20 @@
+import React from 'react';
+import { Route } from 'react-router';
+import { BrowserRouter } from 'react-router-dom';
+import Inicio from '../Containers/Inicio';
+
+
+
+
+function About() {
+    return ( 
+    
+                 <BrowserRouter>
+                        <Route exact path="/Inicio" component={Inicio} />
+                     
+                 </BrowserRouter>
+
+     );
+}
+ 
+export default About;
